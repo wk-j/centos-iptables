@@ -61,6 +61,20 @@ cd /use/share/ScanService.RPM
 /usr/share/ScanService.RPM/ScanService.RPM
 ```
 
+## Docker
+
+```bash
+sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+sudo yum install docker-ce
+sudo usermod -aG docker $(whoami)
+
+sudo systemctl enable docker.service
+sudo systemctl start docker.service
+
+sudo yum install -y python3-pip
+sudo pip3 install docker-compose
+```
+
 ## Resource
 
 - https://linuxize.com/post/how-to-install-iptables-on-centos-7
