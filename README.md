@@ -1,6 +1,10 @@
 ## CentOS
 
 ```bash
+brew cask install virtualbox
+brew cask install vagrant
+brew cask install vagrant-manager
+
 vagrant up
 ssh vagrant@192.168.50.10 -i .vagrant/machines/default/virtualbox/private_key
 
