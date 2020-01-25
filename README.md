@@ -40,6 +40,7 @@ netstat -tulnp
 ```
 sudo iptables -A INPUT -p tcp --dport ssh -j ACCEPT
 sudo iptables -A INPUT -p tcp --dport 9999 -j ACCEPT
+python -m SimpleHTTPServer 9999
 ```
 
 ### Delete
