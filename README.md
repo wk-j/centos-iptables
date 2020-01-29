@@ -56,6 +56,12 @@ sudo iptables -D INPUT 5
 sudo service iptables save
 ```
 
+## Test
+
+```bash
+curl 192.168.50.10:9999
+```
+
 ## Resource
 
 - https://linuxize.com/post/how-to-install-iptables-on-centos-7
